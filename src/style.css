@@ -1,0 +1,33 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar-brand {
+  font-size: 35px;
+  padding-left: 34px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+}
+
+.card-container {
+  padding: 64px;
+}
+.card {
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.card-text-container {
+  padding-top: 17px;
+}
+.card-text {
+  font-size: 25px;
+}
+.card-icon {
+  padding-right: 2px;
+  height: 20px;
+}
