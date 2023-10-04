@@ -1,12 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-}
-.navbar-brand {
-  font-size: 35px;
+  height: 100%;
 }
 
-.navbar-nav {
-  padding-left: 200px;
+.navbar-brand {
+  font-size: 35px;
 }
 
 .nav-link {
@@ -15,6 +13,7 @@ body {
   padding: 5px;
 }
 
+/* halaman dashboard */
 .card-container {
   padding-top: 64px;
   padding-left: 15px;
@@ -23,9 +22,6 @@ body {
   width: 300px;
   height: 170px;
   border-radius: 20px;
-}
-.profile-icon-container {
-  padding-left: 185px;
 }
 
 .card-text-container {
@@ -36,4 +32,47 @@ body {
 }
 .chart-js {
   padding-top: 35px;
+}
+.dropstart {
+  cursor: pointer;
+}
+
+/* halaman login */
+
+.logo-login {
+  padding-top: 45px;
+  text-align: center;
+}
+
+.card-login {
+  width: 550px;
+  height: 440px;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-login-h1 {
+  font-size: 32px;
+  padding-top: 32px;
+}
+
+.card-login-p {
+  font-size: 25px;
+}
+
+.card-login-text-p {
+  font-size: 24px;
+  color: #808080;
+  padding-top: 44px;
+  text-align: center;
+}
+
+.btn-login {
+  width: 245px;
+  height: 40px;
+}
+
+.button-login {
+  padding-top: 20px;
 }
