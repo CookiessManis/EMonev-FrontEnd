@@ -40,7 +40,7 @@ body {
 /* halaman login */
 
 .logo-login {
-  padding-top: 45px;
+  padding-top: 7px;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .card-login-text-p {
-  font-size: 24px;
+  font-size: 20px;
   color: #808080;
   padding-top: 44px;
   text-align: center;
@@ -75,4 +75,40 @@ body {
 
 .button-login {
   padding-top: 20px;
+}
+
+/* bagian halaman Kegiatan */
+.back-container {
+  padding-top: 47px;
+  padding-left: 36px;
+}
+.back-sizing {
+  width: 353px;
+  background-color: #d9d9d9;
+  height: 63px;
+  border-radius: 63px;
+}
+
+.back-texting {
+  font-size: 20px;
+  color: black;
+}
+
+.card-kegiatan-container {
+  padding-top: 44px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-kegiatan {
+  width: auto;
+  height: auto;
+}
+.card-table-texting {
+  font-size: 30px;
+  padding-left: 41px;
+}
+
+.search-container {
+  width: 400px;
 }
