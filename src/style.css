@@ -122,3 +122,26 @@ body {
 .search-container {
   width: 400px;
 }
+
+/* halaman inputan anggaran */
+.anggaran-select {
+  padding-right: 37px;
+  padding-top: 10px;
+}
+.anggaran-h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.anggaran-p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.anggaran-value {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 42px;
+}

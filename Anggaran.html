@@ -115,6 +115,7 @@
         </div>
       </div>
     </nav>
+    <!-- end navigation -->
 
     <!-- button kembali ke halaman utama -->
     <div class="back-container d-flex justify-content-between">
@@ -127,139 +128,27 @@
         </a>
       </div>
       <div class="btn-tambahKegiatan">
-        <button class="btn btn-primary btn-tmbhKeg">➕ Tambah Belanja</button>
+        <button class="btn btn-primary btn-tmbhKeg">Tambah Anggaran</button>
       </div>
     </div>
 
-    <!-- card table -->
-    <div class="card-kegiatan-container">
-      <div class="card card-kegiatan">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <p class="card-table-texting fw-bold align-middle">Belanja</p>
-            <!-- search -->
-            <div class="search-container">
-              <div class="input-group">
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="button-addon1"
-                >
-                  🔍
-                </button>
-                <input
-                  id="myInput"
-                  onkeyup="myFunction()"
-                  type="text"
-                  class="form-control border border-black"
-                  aria-label="Example text with button addon"
-                  aria-describedby="button-addon1"
-                  placeholder="Cari Data Kegiatan"
-                />
-              </div>
-            </div>
-          </div>
+    <div class="anggaran-select d-flex justify-content-end">
+      <select>
+        <option value="2024" selected disabled>2024</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
 
-          <!-- table -->
+    <div class="anggaran-h1">
+      <h2 class="fw-bold">Satuan Polisi Pamong Praja</h2>
+    </div>
 
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th
-                    rowspan="2"
-                    class="align-middle border border-black px-4 text-center"
-                  >
-                    Nomer Sub
-                  </th>
-                  <th
-                    rowspan="2"
-                    class="align-middle px-4 text-center border border-black px-4"
-                  >
-                    Sub Kegiatan
-                  </th>
-                  <th colspan="16" class="text-center border border-black px-4">
-                    Jumlah Kebutuhan Dana
-                  </th>
-                  <th
-                    rowspan="2"
-                    class="text-center border border-black px-4 align-middle"
-                  >
-                    Detail
-                  </th>
-                </tr>
-                <tr
-                  class="align-middle px-5 text-center py-3 border border-black"
-                >
-                  <th>Januari</th>
-                  <th>Februari</th>
-                  <th>Maret</th>
-                  <th>TriWulan I</th>
-                  <th>April</th>
-                  <th>Mei</th>
-                  <th>Juni</th>
-                  <th>Triwulan II</th>
-                  <th>Juli</th>
-                  <th>Agustus</th>
-                  <th>September</th>
-                  <th>Triwulan III</th>
-                  <th>Oktober</th>
-                  <th>November</th>
-                  <th>Desember</th>
-                  <th>Triwulan IV</th>
-                </tr>
-              </thead>
-              <tbody class="align-middle" id="myTable">
-                <tr class="text-center">
-                  <td>Minum</td>
-                  <td>Rp.100.000</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>
-                    <button class="btn btn-warning text-white text-center">
-                      <span class="text-black text-center">✏</span>Ubah
-                    </button>
-                  </td>
-                </tr>
-                <tr class="text-center">
-                  <td>Makan</td>
-                  <td>Rp.100.000</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    <div class="anggaran-p">
+      <p class="fw-medium">Tahun Anggaran 2023</p>
+    </div>
+
+    <div class="anggaran-value">
+      <h1 class="fw-semibold">Rp.200.000.00</h1>
     </div>
 
     <script src="src/script.js"></script>
