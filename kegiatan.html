@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg bg-light shadow">
       <div class="container-fluid">
         <!-- judul navbar -->
-        <a href="#" class="navbar-brand fw-medium">Dashboard</a>
+        <a href="index.html" class="navbar-brand fw-medium">Dashboard</a>
         <!-- navbar -->
         <ul class="navbar-nav mx-auto">
           <li class="nav-item dropdown px-2">
@@ -43,7 +43,7 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#"
+                <a class="dropdown-item" href="Anggaran.html"
                   >Inputan Anggaran Tahun 2023</a
                 >
               </li>
@@ -52,11 +52,14 @@
                   >Perubahan Anggaran Tahun 2023</a
                 >
               </li>
+              <li>
+                <a href="#" class="dropdown-item">Inputan Triwulan</a>
+              </li>
               <!-- <li><hr class="dropdown-divider" /></li> -->
             </ul>
           </li>
           <li class="nav-item dropdown px-2">
-            <a href="" class="nav-link"> Bidang </a>
+            <a href="#" class="nav-link"> Seksi </a>
           </li>
           <li class="nav-item dropdown px-2">
             <a
@@ -128,7 +131,13 @@
         </a>
       </div>
       <div class="btn-tambahKegiatan">
-        <button class="btn btn-primary btn-tmbhKeg">➕ Tambah Belanja</button>
+        <button
+          class="btn btn-primary btn-tmbhKeg"
+          data-bs-toggle="modal"
+          data-bs-target="#TambahModal"
+        >
+          Tambah Belanja
+        </button>
       </div>
     </div>
 
@@ -201,6 +210,61 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Tambah Kegiatan-->
+    <div
+      class="modal fade"
+      id="TambahModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Kelola Kegiatan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="" class="fw-medium">Nomer Sub Kegiatan</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Isi Nomer Sub Kegiatan"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="fw-medium">Sub Kegiatan</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Isi Sub Kegiatan "
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="button-kegiatan btn btn-secondary px-4"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="button-kegiatan btn btn-primary px-4">
+              Simpan
+            </button>
           </div>
         </div>
       </div>

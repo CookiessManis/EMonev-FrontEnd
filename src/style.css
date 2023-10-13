@@ -82,15 +82,18 @@ body {
   padding-top: 47px;
   padding-left: 36px;
 }
+.button-kegiatan {
+  border-radius: 20px;
+}
 .back-sizing {
-  width: 353px;
+  width: 350px;
   background-color: #d9d9d9;
-  height: 63px;
+  height: 60px;
   border-radius: 63px;
 }
 .btn-tambahKegiatan {
   padding-right: 36px;
-  height: 50px;
+  height: 60px;
   padding-top: 20px;
   border-radius: 20px;
 }
@@ -145,4 +148,8 @@ body {
   font-size: 48px;
   text-align: center;
   padding-top: 42px;
+}
+
+.dropdown-container {
+  padding-right: 41px;
 }
