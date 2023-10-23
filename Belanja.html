@@ -150,28 +150,54 @@
           <div class="d-flex justify-content-between">
             <p class="card-table-texting fw-bold align-middle">Belanja</p>
             <!-- search -->
-            <div class="dropdown-container">
-              <div class="dropdown">
-                <a
-                  class="btn dropdown-toggle border border-black"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Pilih Bulan
-                </a>
+            <div class="d-flex">
+              <div class="dropdown-container">
+                <div class="dropdown">
+                  <a
+                    class="btn dropdown-toggle border border-black"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Seksi Linmas
+                  </a>
 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">2020</a></li>
-                  <li><a class="dropdown-item" href="#">2021</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">2023</a>
-                  </li>
-                  <li>
-                    <a href="" class="dropdown-item">2024</a>
-                  </li>
-                </ul>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Umum</a></li>
+                    <li><a class="dropdown-item" href="#">Program</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Penegakan</a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-item">Keuangan</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown-container">
+                <div class="dropdown">
+                  <a
+                    class="btn dropdown-toggle border border-black"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pilih Bulan
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">2020</a></li>
+                    <li><a class="dropdown-item" href="#">2021</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">2023</a>
+                    </li>
+                    <li>
+                      <a href="" class="dropdown-item">2024</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -185,16 +211,22 @@
                   <th
                     class="align-middle border border-black px-4 py-4 text-center"
                   >
-                    Nomer Sub Belanja
+                    Nomer Rekening
                   </th>
                   <th class="align-middle border border-black px-4 text-center">
-                    Sub Belanja
+                    Rincian Belanja
                   </th>
                   <th class="align-middle border border-black px-4 text-center">
                     Pagu
                   </th>
                   <th class="align-middle border border-black px-4 text-center">
+                    NPD
+                  </th>
+                  <th class="align-middle border border-black px-4 text-center">
                     Realisasi
+                  </th>
+                  <th class="align-middle border border-black px-4 text-center">
+                    Realisasi (%)
                   </th>
                   <th class="align-middle border border-black px-4 text-center">
                     Detail
@@ -204,23 +236,18 @@
 
               <tbody class="align-middle" id="myTable">
                 <tr class="text-center">
-                  <td>Minum</td>
-                  <td>Rp.100.000</td>
-                  <td>100</td>
-                  <td>100</td>
+                  <td>3909109</td>
+                  <td>Pensil</td>
+                  <td>1000.000.00</td>
+                  <td>500.000</td>
+                  <td>499.000</td>
+                  <td>90%</td>
                   <td>
-                    <button class="btn btn-warning text-white text-center">
-                      <span class="text-black text-center">📝</span>Ubah
-                    </button>
-                  </td>
-                </tr>
-                <tr class="text-center">
-                  <td>Makan</td>
-                  <td>Rp.100.000</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>
-                    <button class="btn btn-warning text-white text-center">
+                    <button
+                      class="btn btn-warning text-white text-center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ModalUbah"
+                    >
                       <span class="text-black text-center">📝</span>Ubah
                     </button>
                   </td>
@@ -256,11 +283,11 @@
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <label for="">Nomer Sub Belanja</label>
+              <label for="">Nomer Rekening</label>
               <input type="text" class="form-control" />
             </div>
             <div class="mb-3">
-              <label for="">Sub Belanja</label>
+              <label for="">Rincian Belanja</label>
               <input type="text" class="form-control" />
             </div>
             <div class="mb-3">
@@ -268,7 +295,15 @@
               <input type="text" class="form-control" />
             </div>
             <div class="mb-3">
+              <label for="">NPD</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
               <label for="">Realisasi</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">Realisasi (%)</label>
               <input type="text" class="form-control" />
             </div>
           </div>
@@ -283,6 +318,78 @@
             <button type="button" class="button-kegiatan btn btn-primary px-4">
               Simpan
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Tambah -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ModalUbah"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Kelola Sub Belanja
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="">Nomer Rekening</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">Rincian Belanja</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">Pagu</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">NPD</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">Realisasi</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="">Realisasi (%)</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="button-kegiatan btn btn-danger px-4">
+              Hapus
+            </button>
+            <div class="justify-content-around">
+              <button
+                type="button"
+                class="button-kegiatan btn btn-secondary px-4"
+                data-bs-dismiss="modal"
+              >
+                Batal
+              </button>
+              <button
+                type="button"
+                class="button-kegiatan btn btn-primary px-4"
+              >
+                Simpan
+              </button>
+            </div>
           </div>
         </div>
       </div>
