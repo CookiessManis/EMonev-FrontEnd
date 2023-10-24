@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belanja</title>
+    <title>Anggaran</title>
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,9 +59,6 @@
               </li>
               <!-- <li><hr class="dropdown-divider" /></li> -->
             </ul>
-          </li>
-          <li class="nav-item dropdown px-2">
-            <a href="#" class="nav-link"> Seksi </a>
           </li>
           <li class="nav-item dropdown px-2">
             <a
@@ -134,7 +131,13 @@
       </div>
 
       <div class="btn-tambahKegiatan">
-        <button class="btn btn-primary btn-tmbhKeg">Tambah Anggaran</button>
+        <button
+          class="btn btn-primary btn-tmbhKeg"
+          data-bs-toggle="modal"
+          data-bs-target="#TambahAnggaran"
+        >
+          Tambah Anggaran
+        </button>
       </div>
     </div>
 
@@ -220,6 +223,60 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal tambah anggaran -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="TambahAnggaran"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Tambah Anggaran
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="" class="fw-medium">Nomer Sub Kegiatan</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Isi Nomer Sub Kegiatan"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="fw-medium">Sub Kegiatan</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Isi Sub Kegiatan "
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
