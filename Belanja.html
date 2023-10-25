@@ -26,11 +26,11 @@
   <body>
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg bg-light shadow">
-      <div class="container-fluid">
+      <div class="container-fluid px-3">
         <!-- judul navbar -->
         <a href="index.html" class="navbar-brand fw-medium">Dashboard</a>
         <!-- navbar -->
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown px-2">
             <a class="nav-link" href="Anggaran.html"> Anggaran </a>
           </li>
@@ -55,19 +55,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item dropdown px-2">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Lain-lain
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Seksi</a></li>
-            </ul>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="seksi.html">Seksi</a>
           </li>
         </ul>
         <!-- end navbar -->
@@ -197,6 +186,9 @@
                     Realisasi (%)
                   </th>
                   <th class="align-middle border border-black px-4 text-center">
+                    Target
+                  </th>
+                  <th class="align-middle border border-black px-4 text-center">
                     Detail
                   </th>
                 </tr>
@@ -208,8 +200,9 @@
                   <td>Pensil</td>
                   <td>1000.000.00</td>
                   <td>500.000</td>
-                  <td>499.000</td>
+                  <td>500.000</td>
                   <td>90%</td>
+                  <td>499.000</td>
                   <td>
                     <button
                       class="btn btn-warning text-white text-center"
@@ -268,16 +261,28 @@
             </div>
             <div class="mb-3">
               <label for="">Pagu</label>
-              <input type="text" class="form-control" placeholder="Isi Pagu" />
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Isi Pagu"
+              />
             </div>
             <div class="mb-3">
               <label for="">NPD</label>
-              <input type="text" class="form-control" placeholder="Isi NPD" />
+              <input type="number" class="form-control" placeholder="Isi NPD" />
+            </div>
+            <div class="mb-3">
+              <label for="">Target</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Isi Target"
+              />
             </div>
             <div class="mb-3">
               <label for="">Realisasi</label>
               <input
-                type="text"
+                type="number"
                 class="form-control"
                 placeholder="Isi Realisasi"
               />
@@ -299,7 +304,7 @@
       </div>
     </div>
 
-    <!-- Modal Tambah -->
+    <!-- Modal Ubah -->
     <!-- Modal -->
     <div
       class="modal fade"
@@ -352,6 +357,14 @@
                 type="text"
                 class="form-control"
                 placeholder="Isi Realisasi"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="">Target</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Isi Target"
               />
             </div>
           </div>

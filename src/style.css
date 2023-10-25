@@ -165,3 +165,25 @@ body {
 .button-anggaran {
   width: 20px;
 }
+
+.card-container-seksi {
+  width: 245px;
+  border-radius: 10px;
+}
+
+.logo-seksi {
+  padding-top: 14px;
+}
+.text-seksi {
+  font-size: 20px;
+}
+
+.card-seksi {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.h5-seksi {
+  font-size: 14px;
+  padding-top: 4px;
+}
