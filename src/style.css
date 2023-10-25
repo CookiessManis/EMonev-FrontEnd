@@ -153,3 +153,15 @@ body {
 .dropdown-container {
   padding-right: 41px;
 }
+
+.program-kerja {
+  font-size: 25px;
+}
+
+#myTable {
+  font-size: 20px;
+}
+
+.button-anggaran {
+  width: 20px;
+}

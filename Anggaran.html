@@ -32,33 +32,7 @@
         <!-- navbar -->
         <ul class="navbar-nav mx-auto">
           <li class="nav-item dropdown px-2">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Anggaran
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="Anggaran.html"
-                  >Inputan Anggaran Tahun 2023</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Perubahan Anggaran Tahun 2023</a
-                >
-              </li>
-              <li>
-                <a href="triwulan.html" class="dropdown-item"
-                  >Inputan Triwulan</a
-                >
-              </li>
-              <!-- <li><hr class="dropdown-divider" /></li> -->
-            </ul>
+            <a class="nav-link" href="Anggaran.html"> Anggaran </a>
           </li>
           <li class="nav-item dropdown px-2">
             <a
@@ -92,10 +66,7 @@
               Lain-lain
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Seksi</a></li>
             </ul>
           </li>
         </ul>
@@ -170,8 +141,7 @@
     <div class="card-kegiatan-container">
       <div class="card card-kegiatan">
         <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <p class="card-table-texting fw-bold align-middle">Program Kerja</p>
+          <div class="d-flex justify-content-end pb-3">
             <!-- search -->
             <div class="search-container">
               <div class="input-group">
@@ -201,25 +171,19 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th class="align-middle border border-black text-center w-25">
-                    Nomor Sub Kegiatan
-                  </th>
                   <th
-                    colspan="4"
-                    class="text-center border border-black align-middle w-50"
+                    class="align-middle border border-black text-start w-25 program-kerja"
                   >
-                    Sub Kegiatan
+                    Program Kerja
                   </th>
                 </tr>
               </thead>
               <tbody class="align-middle" id="myTable">
-                <tr class="text-center">
+                <tr class="text-start">
                   <td>Dinas</td>
-                  <td>Rp.100.000</td>
                 </tr>
-                <tr class="text-center">
+                <tr class="text-start">
                   <td>Dinas</td>
-                  <td>Rp.100.000</td>
                 </tr>
               </tbody>
             </table>
@@ -252,31 +216,31 @@
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <label for="" class="fw-medium">Nomer Sub Kegiatan</label>
+              <label for="" class="fw-medium">Tahun Anggaran</label>
               <input
-                type="text"
+                type="number"
+                min="1900"
+                max="2099"
+                step="1"
                 class="form-control"
-                placeholder="Isi Nomer Sub Kegiatan"
+                placeholder="cth: 2002"
               />
             </div>
             <div class="mb-3">
-              <label for="" class="fw-medium">Sub Kegiatan</label>
+              <label for="" class="fw-medium">Jumlah Anggaran</label>
+              <input type="Number" class="form-control" placeholder="200000" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="fw-medium">Program Kerja</label>
               <input
                 type="text"
                 class="form-control"
-                placeholder="Isi Sub Kegiatan "
+                placeholder="Pembelian Barang"
               />
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
           </div>
         </div>
       </div>
