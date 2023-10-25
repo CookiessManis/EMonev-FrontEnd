@@ -90,27 +90,40 @@
         </a>
       </div>
 
-      <div class="btn-tambahKegiatan">
-        <button
-          class="btn btn-primary btn-tmbhKeg"
-          data-bs-toggle="modal"
-          data-bs-target="#TambahAnggaran"
-        >
-          Tambah Anggaran
-        </button>
+      <div class="d-flex">
+        <div class="btn-tambahKegiatan">
+          <button
+            class="btn btn-primary btn-tmbhKeg"
+            data-bs-toggle="modal"
+            data-bs-target="#TambahAnggaran"
+          >
+            Tambah Anggaran
+          </button>
+        </div>
+        <div class="anggaran-container">
+          <div class="anggaran-select">
+            <select class="form-select">
+              <option value="2024" selected disabled>pilih Tahun</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2023">2025</option>
+              <option value="2024">2026</option>
+              <option value="2023">2027</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="d-flex justify-content-end">
-      <div class="anggaran-select">
-        <select class="form-select">
-          <option value="2024" selected disabled>pilih Tahun</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2023">2025</option>
-          <option value="2024">2026</option>
-          <option value="2023">2027</option>
-        </select>
+      <div class="btn-tambahKegiatan">
+        <button
+          class="btn btn-warning btn-tmbhKeg text-white"
+          data-bs-toggle="modal"
+          data-bs-target="#ubahAnggaran"
+        >
+          Ubah Anggaran
+        </button>
       </div>
     </div>
 
@@ -122,50 +135,34 @@
       <p class="fw-medium">Tahun Anggaran 2023</p>
     </div>
 
-    <div class="anggaran-value">
+    <div class="anggaran-value d-flex justify-content-center">
       <h1 class="fw-semibold">Rp.200.000.00</h1>
+      <!-- <span class="text-anggaran">Ubah</span> -->
     </div>
 
     <!-- card table -->
     <div class="card-kegiatan-container">
       <div class="card card-kegiatan">
         <div class="card-body">
-          <div class="d-flex justify-content-end pb-3">
-            <!-- search -->
-            <div class="search-container">
-              <div class="input-group">
-                <button
-                  class="btn btn-outline-secondary"
-                  type="button"
-                  id="button-addon1"
-                >
-                  🔍
-                </button>
-                <input
-                  id="myInput"
-                  onkeyup="myFunction()"
-                  type="text"
-                  class="form-control border border-black"
-                  aria-label="Example text with button addon"
-                  aria-describedby="button-addon1"
-                  placeholder="Cari Data Anggaran"
-                />
-              </div>
-            </div>
-          </div>
-
           <!-- table -->
+          <div class="d-flex justify-content-between py-2">
+            <h4 class="text-start program-kerja fw-bold h4-programKerja">
+              Program Kerja
+            </h4>
+
+            <button
+              class="btn btn-primary rounded-3"
+              data-bs-toggle="modal"
+              data-bs-target="#TambahProgram"
+            >
+              Tambah Program Kerja
+            </button>
+          </div>
 
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
-                <tr>
-                  <th
-                    class="align-middle border border-black text-start w-25 program-kerja"
-                  >
-                    Program Kerja
-                  </th>
-                </tr>
+                <tr></tr>
               </thead>
               <tbody class="align-middle" id="myTable">
                 <tr class="text-start">
@@ -181,8 +178,7 @@
       </div>
     </div>
 
-    <!-- modal tambah anggaran -->
-    <!-- Modal -->
+    <!-- Modal Tambah Anggaran-->
     <div
       class="modal fade"
       id="TambahAnggaran"
@@ -212,12 +208,80 @@
               <label for="" class="fw-medium">Jumlah Anggaran</label>
               <input type="Number" class="form-control" placeholder="200000" />
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ubah Anggaran-->
+    <div
+      class="modal fade"
+      id="ubahAnggaran"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Ubah Anggaran
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="" class="fw-medium">Tahun Anggaran</label>
+              <input type="date" class="form-control" placeholder="cth: 2002" />
+            </div>
+            <div class="mb-3">
+              <label for="" class="fw-medium">Jumlah Anggaran</label>
+              <input type="Number" class="form-control" placeholder="200000" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal tambah program kerja -->
+    <div
+      class="modal fade"
+      id="TambahProgram"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Tambah Program Kerja
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
             <div class="mb-3">
               <label for="" class="fw-medium">Program Kerja</label>
               <input
                 type="text"
                 class="form-control"
-                placeholder="Pembelian Barang"
+                placeholder="Isi Program Kerja"
               />
             </div>
           </div>

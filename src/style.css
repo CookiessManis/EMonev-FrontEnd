@@ -190,3 +190,20 @@ body {
 #myTable {
   cursor: pointer;
 }
+
+.text-anggaran {
+  font-size: 15px;
+  color: red;
+  text-decoration: underline;
+  padding-top: 20px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.anggaran-container {
+  padding-top: 10px;
+}
+
+.h4-programKerja {
+  font-size: 35px;
+}
