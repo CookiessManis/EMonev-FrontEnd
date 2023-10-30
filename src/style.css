@@ -187,8 +187,11 @@ body {
   font-size: 14px;
   padding-top: 4px;
 }
-.myTable {
+.td-pointer {
   cursor: pointer;
+}
+.td-pointer:hover {
+  background-color: #d9d9d9;
 }
 
 .text-anggaran {
@@ -207,3 +210,5 @@ body {
 .h4-programKerja {
   font-size: 35px;
 }
+
+/* mobile version */
