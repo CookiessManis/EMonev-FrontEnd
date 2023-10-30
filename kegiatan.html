@@ -72,7 +72,14 @@
               alt=""
             />
             <ul class="dropdown-menu">
-              <li><a href="#" class="dropdown-item">Action</a></li>
+              <li>
+                <p
+                  onclick="location.href='login.html'"
+                  class="dropdown-item-text dropdown-start"
+                >
+                  Logout
+                </p>
+              </li>
             </ul>
           </div>
         </div>
@@ -188,7 +195,13 @@
                     >
                       Edit
                     </button>
-                    <button class="btn btn-danger">Hapus</button>
+                    <button
+                      class="btn btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#hapusModal"
+                    >
+                      Hapus
+                    </button>
                   </td>
                 </tr>
                 <tr class="text-center">
@@ -339,6 +352,46 @@
     </div>
 
     <!-- Modal Hapus Kegiatan -->
+    <div
+      class="modal fade"
+      id="hapusModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Konfirmasi Hapus
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="fw-bold">
+              Apakah Anda Yakin Akan Menghapus Data "Dinas"?
+            </h5>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kembali
+            </button>
+            <button type="button" class="btn btn-danger">Konfirmasi</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="src/script.js"></script>
     <script

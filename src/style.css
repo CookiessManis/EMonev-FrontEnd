@@ -211,4 +211,8 @@ body {
   font-size: 35px;
 }
 
+.dropdown-start:hover {
+  background-color: #d9d9d9;
+}
+
 /* mobile version */
